@@ -14,6 +14,8 @@
         }
     ],
     "autoload": {
-        "classmap": ["src"]
+        "psr-0": {
+            "Johntron": "src/"
+        }
     }
 }

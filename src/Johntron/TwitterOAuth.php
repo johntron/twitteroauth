@@ -9,11 +9,11 @@
  * Also upgraded to PHP 5.3 namespaces
  */
 
-namespace twitteroauth;
+namespace Johntron;
 
-use OAuth;
-use OAuthException;
-use Exception;
+use \OAuth;
+use \OAuthException;
+use \Exception;
 
 if (!extension_loaded('oauth')) {
 	throw new Exception("This Twitter OAuth library requires the pecl/oauth extension");
