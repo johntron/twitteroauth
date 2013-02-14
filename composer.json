@@ -1,11 +1,11 @@
 {
-    "name": "johntron/twitteroauth",
+    "name": "johntron/twitteroauth",
     "type": "library",
     "description": "PHP 5.3, Twitter API 1.1 version of abraham/twitteroauth",
     "homepage": "http://github.com/johntron/twitteroauth",
-    "require": {
-        "php": ">=5.3.0"
-    },
+    "require": {
+        "php": ">=5.3.0"
+    },
     "authors": [
         {
             "name": "John Syrinek",
@@ -13,8 +13,7 @@
             "role": "Developer"
         }
     ],
-    "autoload": {
-        "classmap": ["src"]
-    }
+    "autoload": {
+        "classmap": ["src"]
+    }
 }
-
