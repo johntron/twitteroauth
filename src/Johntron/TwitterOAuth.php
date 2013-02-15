@@ -156,6 +156,13 @@ class TwitterOAuth {
 	}
 
 	/**
+	 * Set access token and secret
+	 */
+	public function setToken($token, $secret) {
+		$this->consumer->setToken($token, $secret);
+	}
+
+	/**
 	 * Get a request_token from Twitter
 	 *
 	 * @return array a key/value array containing oauth_token and oauth_token_secret
