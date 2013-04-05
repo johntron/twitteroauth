@@ -129,11 +129,11 @@ class TwitterOAuth {
 				$responseInfo['remaining_hits'] = 0;
 				$responseInfo['reset_time_in_seconds'] = time() + $retryAfter;
 			} else {
-				$remainingHits = self::extractHeader($headers, 'X-RateLimit-Remaining:');
+				$remainingHits = self::extractHeader($headers, 'X-Rate-Limit-Remaining:');
 				if ($remainingHits !== false) {
 					$responseInfo['remaining_hits'] = $remainingHits;
 				}
-				$resetTimeInSeconds = self::extractHeader($headers, 'X-RateLimit-Reset:');
+				$resetTimeInSeconds = self::extractHeader($headers, 'X-Rate-Limit-Reset:');
 				if ($resetTimeInSeconds !== false) {
 					$responseInfo['reset_time_in_seconds'] = $resetTimeInSeconds;
 				}
