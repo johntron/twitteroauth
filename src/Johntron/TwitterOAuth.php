@@ -147,7 +147,7 @@ class TwitterOAuth {
 	}
 
 	public static function extractHeader($headers, $start, $end = '\n') {
-		$pattern = '/' . $start . '(.*?)' . $end . '/';
+		$pattern = '/' . $start . '(.*?)' . $end . '/i';
 		if (preg_match($pattern, $headers, $result)) {
 			return trim($result[1]);
 		} else {
